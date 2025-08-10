@@ -1,5 +1,6 @@
 [project]
 name = "rentals"
+
 authors = [
     { name = "Hayyan", email = "hayyandaood90@gmail.com"}
 ]
