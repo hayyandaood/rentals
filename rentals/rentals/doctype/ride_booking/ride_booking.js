@@ -3,7 +3,13 @@
 
 frappe.ui.form.on("Ride Booking", {
 	refresh(frm) {
-        
+        frm.add_custom_button( ('Change Rate'), () => {
+            frm.set_value({
+                'rate': 60,
+                'total_amount' : 100
+            })
+            frm.save()
+        },('Actions'))
 	},
     rate(frm) {
         frm.trigger("update_total_amount")
